@@ -28,7 +28,7 @@ document.getElementById('per-plyer-budget-calculate-button').addEventListener('c
     const budgetInput = document.getElementById('budget-input');
     const budgetAmmount = parseInt(budgetInput.value);
     document.getElementById('player-expanse-cost').innerText = budgetAmmount * 5;
-})
+});
 
 document.getElementById('total-cost-button').addEventListener('click', function () {
     const magaerCostInput = document.getElementById('manager-cost');
@@ -40,4 +40,4 @@ document.getElementById('total-cost-button').addEventListener('click', function 
 
     const totalCost = playerExpenseCostValue + magaerCost + coachCost;
     document.getElementById('total-cost').innerText = totalCost;
-})
+});
