@@ -11,16 +11,12 @@ function playerButton(player, buttonId, isClick) {
         document.getElementById(buttonId).disabled = true;
     }
 }
-let player = 0;
+
 function selectedPlayers(name) {
     const selectedPlayer = document.getElementById('selected-player');
     const selectedElement = document.createElement('li');
     selectedElement.classList.add('list-group-item', 'bg-black', 'text-white');
     selectedElement.innerText = name;
-    // if (player <= 5) {
-    //     selectedPlayer.appendChild(selectedElement);
-    //     player++;
-    //     console.log(player)
-    // }
+    selectedPlayer.appendChild(selectedElement);
 
 }
