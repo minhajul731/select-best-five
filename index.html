@@ -209,35 +209,38 @@
                                 <h4 class="text-white text-decoration-underline fst-italic">Budget</h2>
                                     <div class="mt-3">
                                         <p class="d-inline text-secondary">Per Player</p>
-                                        <input class="d-inline w-50 ms-2 bg-dark text-white rounded-2 px-2 border-light"
+                                        <input id="budget-input"
+                                            class="d-inline w-50 ms-2 bg-dark text-white rounded-2 px-2 border-light"
                                             type="text">
-                                        <button type="button"
+                                        <button type="button" id="per-plyer-budget-calculate-button"
                                             class="btn btn-primary rounded-0 mt-3 px-3 py-1 ms-3">Calculate</button>
                                     </div>
                                     <div class="mt-3">
                                         <p class="d-inline text-secondary">Player Expenses</p>
-                                        <p class="d-inline fw-semibold text-white ms-3">$<span>5000</span></p>
+                                        <p class="d-inline fw-semibold text-white ms-3">$<span
+                                                id="player-expanse-cost">0</span></p>
                                     </div>
                                     <div class="mt-3">
                                         <div>
                                             <div>
                                                 <p class="d-inline text-secondary">Manager</p>
-                                                <input
+                                                <input id="manager-cost"
                                                     class="d-inline w-50 ms-2 bg-dark text-white rounded-2 px-2 border-light"
                                                     type="text">
                                             </div>
                                             <div class="mt-3">
                                                 <p class="d-inline text-secondary ms-4">Coach</p>
-                                                <input
+                                                <input id="coach-cost"
                                                     class="d-inline w-50 ms-2 bg-dark text-white rounded-2 px-2 border-light"
                                                     type="text">
                                             </div>
-                                            <button type="button"
+                                            <button type="button" id="total-cost-button"
                                                 class="btn btn-primary rounded-0 mt-3 px-3 py-1 ms-5">Calculate
                                                 Total</button>
                                         </div>
                                         <h4 class="fw-bold mt-4 text-white">Total
-                                            <span class="fw-bold text-warning ms-5">$<span>0</span></span>
+                                            <span class="fw-bold text-warning ms-5">$<span
+                                                    id="total-cost">0</span></span>
                                         </h4>
                                     </div>
                             </div>
