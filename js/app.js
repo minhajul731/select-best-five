@@ -9,12 +9,18 @@ function playerButton(player, buttonId, isClick) {
 }
 
 
+let playerList = [];
 function selectedPlayers(name) {
-    const selectedPlayer = document.getElementById('selected-player');
-    const selectedElement = document.createElement('li');
-    selectedElement.classList.add('list-group-item', 'bg-black', 'text-white');
-    selectedElement.innerText = name;
-    selectedPlayer.appendChild(selectedElement);
+    if (playerList.length < 5) {
+        const selectedPlayer = document.getElementById('selected-player');
+        const selectedElement = document.createElement('li');
+        playerList.push(selectedElement);
+        selectedElement.classList.add('list-group-item', 'bg-black', 'text-white');
+        selectedElement.innerText = name;
+        selectedPlayer.appendChild(selectedElement);
+        // console.log(playerList.length);
+    }
+
 }
 
 
